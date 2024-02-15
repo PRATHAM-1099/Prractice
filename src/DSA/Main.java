@@ -1,5 +1,7 @@
 package DSA;
 
+import DSA.Trie.TrieOperations;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
@@ -40,15 +42,17 @@ class MedianFinder {
 }
 
 public class Main {
-
-
     public static void main(String[] args) {
 
-        List<String> list = new LinkedList<>();
+        TrieOperations trieOperations = new TrieOperations();
+        trieOperations.insert("apple");
+        trieOperations.insert("apps");
+        trieOperations.insert("bat");
+        trieOperations.insert("cat");
+        trieOperations.insert("d");
 
-        list.add(0,"prat");
-        list.add(0,"trunnaa");
-        System.out.println(list);
+        System.out.println(trieOperations.searchWord("apple"));
+        System.out.println(trieOperations.searchPrefix("d"));
 
     }
 
