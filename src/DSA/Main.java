@@ -2,10 +2,7 @@ package DSA;
 
 import DSA.Trie.TrieOperations;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 
 
 class MedianFinder {
@@ -45,14 +42,37 @@ public class Main {
     public static void main(String[] args) {
 
         TrieOperations trieOperations = new TrieOperations();
-        trieOperations.insert("apple");
-        trieOperations.insert("apps");
-        trieOperations.insert("bat");
-        trieOperations.insert("cat");
-        trieOperations.insert("d");
+//        trieOperations.insert("apple");
+//        trieOperations.insert("apple");
+//        trieOperations.insert("apple");
+//        trieOperations.insert("apps");
+//        trieOperations.insert("bat");
+//        trieOperations.insert("cat");
+//        trieOperations.insert("d");
+//        trieOperations.insert("a");
+//
+//        System.out.println(trieOperations.searchWord("apple"));
+//        System.out.println(trieOperations.searchPrefix("d"));
+//        System.out.println(trieOperations.startsWith("a"));
 
-        System.out.println(trieOperations.searchWord("apple"));
-        System.out.println(trieOperations.searchPrefix("d"));
+        List<String> list = new ArrayList<>();
+        list.add("g");
+        list.add("a");
+        list.add("ak");
+        list.add("szhkb");
+        list.add("hy");
+        list.add("ninga");
+
+        trieOperations.insert("g");
+        trieOperations.insert("a");
+        trieOperations.insert("ak");
+        trieOperations.insert("szhkb");
+        trieOperations.insert("hy");
+        trieOperations.insert("ninga");
+
+        System.out.println(trieOperations.startsWith("a"));
+
+        System.out.println(trieOperations.completeString(list));
 
     }
 
