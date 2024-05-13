@@ -9,6 +9,6 @@ public class Client {
         l1.display(0,0);
 
         Letter  l2 = LetterFactory.createLetter('o');
-        l1.display(0,1);
+        l2.display(0,1);
     }
 }

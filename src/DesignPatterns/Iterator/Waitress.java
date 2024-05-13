@@ -13,7 +13,7 @@ public class Waitress {
 
     public void printMenu(){
         Iterator<MenuItem> pancakeIterator = pancakeHouseMenu.createIterator();
-        Iterator dinerIterator = dinerMenu.createIterator();
+        Iterator<MenuItem> dinerIterator = dinerMenu.createIterator();
 
         System.out.println("Menu Dinner");
         printMenu(dinerIterator);
@@ -22,9 +22,9 @@ public class Waitress {
         printMenu(pancakeIterator);
     }
 
-    private void printMenu(Iterator iterator) {
+    private void printMenu(Iterator<MenuItem> iterator) {
         while(iterator.hasNext()){
-            MenuItem menuItem = (MenuItem) iterator.next();
+            MenuItem menuItem = iterator.next();
             System.out.println(menuItem.name);
             System.out.println(menuItem.description);
             System.out.println(menuItem.price);

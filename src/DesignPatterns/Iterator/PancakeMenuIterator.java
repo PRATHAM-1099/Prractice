@@ -18,7 +18,7 @@ public class PancakeMenuIterator implements Iterator {
 
     @Override
     public Object next() {
-        MenuItem menuItem = (MenuItem) menuItems.get(i);
+        MenuItem menuItem = menuItems.get(i);
         i = i + 1;
         return menuItem;
     }

@@ -13,6 +13,6 @@ public class DocumentCharacter implements Letter{
 
     @Override
     public void display(int row, int column) {
-        System.out.println(row + " And " + column);
+        System.out.println(row + " And " + column + " " + character + " " + fontType + " " + size);
     }
 }
