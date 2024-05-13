@@ -2,11 +2,8 @@ package DesignPatterns.observer;
 
 public class ConcreteObserver implements Observer{
 
-    Subject subject;
-    public ConcreteObserver(Subject subject) {
-        this.subject = subject;
-        subject.registerObserver(this);
-    }
+
+    public ConcreteObserver(){}
     @Override
     public void update(ConcreteSubject subject) {
         System.out.println("Updated age is " + subject.getAge());

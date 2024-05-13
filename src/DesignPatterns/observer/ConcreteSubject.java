@@ -3,7 +3,7 @@ package DesignPatterns.observer;
 import java.util.ArrayList;
 
 public class ConcreteSubject implements Subject{
-    private ArrayList<Observer> observers;
+    private final ArrayList<Observer> observers;
     private int age;
 
     public ConcreteSubject() {
@@ -23,7 +23,7 @@ public class ConcreteSubject implements Subject{
 
     public void notifyObservers() {
         for(int i=0;i<observers.size();i++) {
-            Observer observer = (Observer) observers.get(i);
+            Observer observer = observers.get(i);
             observer.update(this);
         }
     }

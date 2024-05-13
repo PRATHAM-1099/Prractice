@@ -2,6 +2,11 @@ package DesignPatterns.AbstractFactory;
 
 public class CheesePizza extends Pizza{
     PizzaIngredientFactory pizzaIngredientFactory;
+
+    public CheesePizza(){
+
+    }
+
     public CheesePizza(PizzaIngredientFactory pizzaIngredientFactory) {
         this.pizzaIngredientFactory = pizzaIngredientFactory;
     }

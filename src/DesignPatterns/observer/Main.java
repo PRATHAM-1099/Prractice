@@ -4,7 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
         Subject s = new ConcreteSubject();
-        Observer c = new ConcreteObserver(s);
+        s.registerObserver(new ConcreteObserver());
+
 
         s.setAge(50);
     }

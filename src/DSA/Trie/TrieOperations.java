@@ -4,11 +4,10 @@ package DSA.Trie;
 import java.util.List;
 
 class Trie {
-    private Trie[] children = new Trie[26];
+    private final Trie[] children = new Trie[26];
     private boolean flag;
     int ew;
     int cp;
-
 
     boolean containsKey(char ch){
         return children[ch - 'a'] != null;

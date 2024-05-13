@@ -19,8 +19,7 @@ public class Board {
 
         for(int i=0;i<boardSize;i++) {
             for(int j=0; j<boardSize;j++) {
-                Cell cellObj = new Cell();
-                cells[i][j] = cellObj;
+                cells[i][j] = new Cell();
             }
         }
     }

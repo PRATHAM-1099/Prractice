@@ -1,4 +1,4 @@
-package Java.Multithreading;
+package Java.Multithreading.ProducerConsumer;
 
 public class Producer implements Runnable{
     SharedResource sharedResource;
